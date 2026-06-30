@@ -2,6 +2,8 @@
 
 **Verify a sustainability claim and issue a QUANTIFIED credit, by GenLayer consensus.**
 
+[![GenLayer](https://img.shields.io/badge/GenLayer-Bradbury-ff4d6d)](https://genlayer.com) [![chainId](https://img.shields.io/badge/chainId-4221-4dd0e1)](https://docs.genlayer.com) [![contract](https://img.shields.io/badge/contract-Python%20GenVM-8a63d2)](https://docs.genlayer.com) [![tests](https://img.shields.io/badge/tests-4%2F4%20passing-3fb950)](tests) [![frontend](https://img.shields.io/badge/frontend-React%20%2B%20Vite%20%2B%20genlayer--js-22a6f2)](app) [![live](https://img.shields.io/badge/live-greenproof.pages.dev-f59e0b)](https://greenproof.pages.dev) [![License](https://img.shields.io/badge/license-MIT-2dd4bf)](LICENSE)
+
 A project claims a carbon offset (a project, an evidence link, claimed tonnes of CO2e). `verify` has
 every validator independently fetch the evidence and decide whether the claim is legitimate **and**
 estimate the verified tonnage; the result is accepted only when validators agree on legitimacy
