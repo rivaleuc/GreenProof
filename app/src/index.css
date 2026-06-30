@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* ----- GreenProof palette: lime sustainability + green, near-black ----- */
+@theme {
+  --color-background: #070d06;
+  --color-surface: #0c160a;
+  --color-card: #101c0d;
+  --color-border: #1f3a18;
+  --color-foreground: #ecf5e6;
+  --color-muted: #93a884;
+
+  --color-primary: #84cc16;            /* lime-500 — sustainability */
+  --color-primary-foreground: #0c1604;
+  --color-accent: #22c55e;             /* green-500 — credit */
+
+  --color-true: #34d399;               /* verified */
+  --color-false: #fb7185;              /* rejected */
+  --color-unverifiable: #fbbf24;
+  --color-ring: #84cc16;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(calc(-100% - var(--gap, 1rem))); } }
+@keyframes gradient-x { to { background-position: 200% center; } }
+@keyframes meteor { 0% { transform: rotate(215deg) translateX(0); opacity: 1; } 70% { opacity: 1; } 100% { transform: rotate(215deg) translateX(-560px); opacity: 0; } }
+@keyframes shiny { 0% { background-position: calc(-100% - var(--shiny-w, 100px)) 0; } 100% { background-position: calc(100% + var(--shiny-w, 100px)) 0; } }
+@keyframes scan { 0% { transform: translateY(-120%); } 100% { transform: translateY(120%); } }
+@keyframes pulse-ring { 0% { transform: scale(.8); opacity: .5; } 100% { transform: scale(2.2); opacity: 0; } }
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: color-mix(in oklab, var(--color-primary) 32%, transparent); }
+}
