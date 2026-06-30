@@ -11,6 +11,7 @@ often **less than claimed** (the consensus haircut), capped at the claimed amoun
 The verb is **"verify + quantify → issue a credit"** — the output is a number of credited tonnes, not a
 bare yes/no.
 
+- **Live demo:** https://greenproof.pages.dev
 - **Contract (Bradbury, chain 4221):** `0x60240a16F874DE0156e04d6abe7084D3357B382C`
 - **Deployed from:** `rivale` (`0xc388…51A44`)
 - **Explorer:** https://explorer-bradbury.genlayer.com/contract/0x60240a16F874DE0156e04d6abe7084D3357B382C
